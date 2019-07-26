@@ -7,13 +7,55 @@ body {
 }
 
 #row1 {
-  background-color: #2196f3;
-  height: 400px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* background-color: #9e9e9e; */
+  background-color: white;
+  min-height: 400px;
+  padding-top:60px;
+  padding-bottom: 50px;
 }
 
-#ava1 {
-  height: 200px;
-  width: 200px;
+.labelReset {
+  background-color: transparent;
+  border: none;
+  height: 120px;
+  width: 150px;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px 0px 50px 0px;
+  cursor: pointer;
+}
+
+.content-rows {
+	height: 800px;
+	border-top: 5px solid #80888d;
+}
+
+.ava1 {
+  height: 300px;
+  width: 300px;
+  opacity: 0.5;
+}
+
+.animation_gengar{
+  height: 300px;
+  width: 300px;
+  display: none;
+}
+
+#titleText {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32pt;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+#selfIntroduce {
+  font-family: 'Shadows Into Light', cursive;
+  opacity: 1;
+  font-size: 14pt; 
+}
+
+.blogEntry {
+  padding:16px;
 }

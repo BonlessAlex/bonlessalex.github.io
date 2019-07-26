@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Alex Tang">
     <meta name="generator" content="Jekyll v3.8.5">
@@ -13,6 +13,9 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="test.css" rel="stylesheet">
   </head>
@@ -20,21 +23,13 @@
   <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      <li class="nav-item active">
+          <a id="aboutMe" class="nav-link" href="#" style="color: rgba(255,255,255,.75)">About me</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -44,24 +39,130 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
+      <li class="nav-item active style=">
+          <a id="gengarTrigger" class="nav-link" href="#"  style="color: rgba(255,255,255,.75)">Gengar</a>
+      </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> -->
   </div>
 </nav>
 
 <main role="main" class="container-fluid">
+  <div id="row1" class="row">
+    <div class="col-sm-12 col-md-4 text-center">
+        <img id="Gengar" src="Gengar.gif" class="animation_gengar">
+    </div>
 
-  <div id="row1"class="row">
-    <img id="ava1" src="gg2.jpeg" class="rounded-circle" alt="Cinque Terre">
-    <p> test </p>
+    <div class="col-sm-12 col-md-4 text-center flex-column">
+        <img id="head-icon" src="gg2.jpeg" class="rounded-circle ava1">
+        <p id="titleText"> Gengar Tang </p>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+        <div id="About Me" style="padding:0em 3em 0em 1em">
+          </br></br></br>
+          <p id="selfIntroduce">I am Alex Tang from China, I got my master degree in UNSW, bechelor degree in Zhejiang University 
+             of Technology. I've forgot most of the stuff I learnt from school, but I am now trying to 
+             call them back in order to find a ideal job.  </br>
+             I have two main habits, soocer and cooking. Arsenal, FC Bayern Munich and Sydent FC are my home 
+             teams.  
+          </p>
+        </div>
+    </div>
+    <!-- <img id="ava1" src="gg2.jpeg" class="rounded-circle">
+    <p id="titleText">"Professor" Alex Tang</p>
+    align-items-center flex-column-->
   </div>
+  
+  <div class="row" style="background: linear-gradient(to right, #6c757d , white)">
+	<div id class="btn-group btn-group-toggle" data-toggle="buttons">
+		<label id="homepageButton" class="btn btn-secondary active labelReset">
+			<input type="radio" name="options" id="homepageButtonIP" autocomplete="off" checked> Tanz
+		</label>
+		<label id="arsenalButton" class="btn btn-secondary labelReset">
+			<input type="radio" name="options" id="arsenalButtonIP" autocomplete="off"> Arsenal
+		</label>
+		<label id="munichButton" class="btn btn-secondary labelReset">
+			<input type="radio" name="options" id="munichButtonIP" autocomplete="off"> Munich
+		</label>
+		<label id="foodButton" class="btn btn-secondary labelReset">
+			<input type="radio" name="options" id="foodButtonIP" autocomplete="off"> Food
+		</label>
+	</div>
+  </div>
+  
+  <div id="Original" class="content-rows row"style="background-color:gray;">
+	Original
+  </div>
+  
+  <div id="Arsenal" class="content-rows row"style="background-color:white; display:none">
+	Arsenal
+  </div>
+  
+  <div id="Munich" class="content-rows row"style="background-color:red; display:none">
+	Munich
+  </div>
+  
+  <div id="Food" class="content-rows row"style="background-color:green; display:none">
+	Food
+  </div>
+  
+  
+  <!--<div class="container" style="background-color: gray">
+	
+    <div id= "row2" class="row">
+      
+      <div class="col-sm-12 col-md-6 blogEntry">
+        <div class="card">
+          <div class="card-body">
+              <h5 class="card-title">Blog1</h5>
+              <p class="card-text">TODO: link to a blog</p>
+              <a href="#" class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-sm-12 col-md-6 blogEntry">
+        <div class="card">
+          <div class="card-body">
+              <h5 class="card-title">Blog1</h5>
+              <p class="card-text">TODO: link to a blog</p>
+              <a href="#" class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 blogEntry">
+          <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Blog1</h5>
+                <p class="card-text">TODO: link to a blog</p>
+                <a href="#" class="btn btn-primary">View</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 blogEntry">
+            <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Blog1</h5>
+                  <p class="card-text">TODO: link to a blog</p>
+                  <a href="#" class="btn btn-primary">View</a>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div> -->
+  
 </main><!-- /.container -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script language="javascript" src="index.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </html>

@@ -8,7 +8,6 @@ body {
 
 #row1 {
   /* background-color: #9e9e9e; */
-  background-color: white;
   min-height: 400px;
   padding-top:60px;
   padding-bottom: 50px;
@@ -17,23 +16,37 @@ body {
 .labelReset {
   background-color: transparent;
   border: none;
-  height: 120px;
   width: 150px;
-  font-size: 1.5em;
+  font-size: 2em;
+  font-weight: bold;
   text-align: center;
-  padding: 40px 0px 50px 0px;
   cursor: pointer;
+  color: rgb(116, 109, 109);
+}
+
+.hoverHelper label:hover{
+  background: transparent;
+
+  color: black;
+}
+
+
+#labelContainer {
+  /* background: linear-gradient(#6c757d , white); */
+  padding-bottom: 35px;
 }
 
 .content-rows {
-	height: 800px;
-	border-top: 5px solid #80888d;
+  /* height: 800px; */
+  /* border-top: 1px solid gray;
+  border-bottom: 1px solid #80888d; */
+
 }
 
 .ava1 {
   height: 300px;
   width: 300px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .animation_gengar{
@@ -58,4 +71,28 @@ body {
 
 .blogEntry {
   padding:16px;
+}
+
+#Arsenal {
+  display: none;
+  background: url("Arensal-post.jpg");
+  height: 1920px;
+  background-repeat: no-repeat;
+  background-size:100% 100%;  
+}
+
+#Munich {
+  display: none;
+  background: url("Munich-post.jpg");
+  height: 1920px;
+  background-repeat: no-repeat;
+  background-size:100% 100%;  
+}
+
+#Food {
+  display: none;
+  background: url("Munich-post.jpg");
+  height: 1920px;
+  background-repeat: no-repeat;
+  background-size:100% 100%;  
 }
